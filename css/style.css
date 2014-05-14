@@ -1,0 +1,42 @@
+/*
+* PatternGame preview stylesheet file
+* @author Lasse Regin Nielsen
+* @date May 14 2014
+*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+
+	background-color: #fff;
+	height: 100%;
+
+}
+
+#container{
+	width: 960px;
+	height: 100%;
+	display: block;
+	margin: auto;
+}
+
+#content{
+	width: 100%;
+}
+
+#footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+
+#footer p{
+	font-size: 12px;
+	color: #000;
+}
+
+

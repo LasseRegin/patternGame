@@ -1,0 +1,71 @@
+/*
+* PatternGame stylesheet file
+* @author Lasse Regin Nielsen
+* @date May 14 2014
+*/
+
+#gameDiv{
+	display: block;
+	width: 500px;
+	height: 500px;
+	z-index: 100;
+	margin: 20px auto 20px auto;
+	-webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+
+#block{
+	-webkit-transition: opacity 250ms linear;
+    -moz-transition: opacity 250ms linear;
+    transition: opacity 250ms linear;
+	clear:none; 
+	float: left;
+	display: inline-block;
+	background-color: #6AFF06;
+}
+	#block:hover{
+		cursor: pointer;
+	}
+
+#block.hide{
+	opacity: 0;
+}
+#patternDiv{
+	position: absolute;	
+	border: 1px solid #000;
+}
+#patternBlock{
+	-webkit-transition: opacity 250ms linear;
+    -moz-transition: opacity 250ms linear;
+    transition: opacity 250ms linear;
+	clear:none; 
+	float: left;
+	display: inline-block;
+}
+#scoreDiv{
+	position: absolute;	
+}
+#levelSpan,
+#stepCountSpan,
+#scoreSpan{
+	margin: 8px auto;
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+#levelSpan{
+	font-weight: 700;
+	font-size: 18px;
+	margin-bottom: 16px;
+}
+#levelSpan:before{
+	content: "Level ";
+	font-weight: 100;
+}
+#stepCountSpan:before{
+	content: "Curr. Clicks: ";
+}
+#scoreSpan:before{
+	content: "Total Clicks: ";
+}
